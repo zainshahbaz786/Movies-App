@@ -1,5 +1,6 @@
 import React from 'react'
 import { Fragment } from 'react'
+import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 const handleSignOut = async () => {
@@ -28,13 +29,14 @@ const handleSignOut = async () => {
 
   const navigation = [
     { name: "Latest Movies", href: "/homePage", current: true },
-      { name: 'Featured Movies', href: '/a', current: false },
+      { name: 'Featured Movies', href: '/featured', current: false },
       { name: 'About Us', href: '/AboutUs', current: false },
     //   { name: 'Calendar', href: '#', current: false },
     //   { name: 'Reports', href: '#', current: false },
   ];
 
   var url=window.location.href;
+  let current;
 if(url.includes("homePage")){
 navigation[0].current=true;
 navigation[1].current=false;
@@ -81,21 +83,40 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
-                        {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className={classNames(
-                              item.current
+
+
+
+
+            <Link className={classNames(
+                              url.includes("homePage")
                                 ? "bg-gray-900 text-white"
                                 : "text-gray-300 hover:bg-gray-700 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
                             )}
-                            aria-current={item.current ? "page" : undefined}
-                          >
-                            {item.name}
-                          </a>
-                        ))}
+                           
+                           
+                           to="/homePage">Latest Movies</Link>
+            <Link className={classNames(
+                              url.includes("featured")
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              "rounded-md px-3 py-2 text-sm font-medium"
+                            )}
+                            // aria-current={item.current ? "page" : undefined}
+                              to="/featured">Featured Movies</Link>
+            <Link  className={classNames(
+                              url.includes("aboutUs")
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              "rounded-md px-3 py-2 text-sm font-medium"
+                            )}
+                            // aria-current={item.current ? "page" : undefined} 
+                            to="/AboutUs">About Us</Link>
+
+
+
+
+                
                       </div>
                     </div>
                   </div>
