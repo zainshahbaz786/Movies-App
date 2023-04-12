@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './Navbar'
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 const features = [
 
@@ -30,6 +31,8 @@ const features = [
 const SectionPage = () => {
   return (
     <>
+
+    <Navbar/>
 
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
