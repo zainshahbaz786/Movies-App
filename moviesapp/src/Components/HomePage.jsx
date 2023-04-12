@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import { useState,useEffect } from 'react'
 const HomePage = () => {
 
-    const [data, setData] = useState([]);
+    var [data, setData] = useState([]);
 
     useEffect(() => {
         debugger;
@@ -13,9 +13,13 @@ const HomePage = () => {
             
             
             debugger;
-            response.json()
+            response.json();
+            
+            console.log(data);
+            debugger;
+
         })
-        .then(data => setData(data));
+        .then(data => setData(data=data));
     }, []);
 
 
