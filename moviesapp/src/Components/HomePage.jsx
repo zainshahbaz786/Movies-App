@@ -1,11 +1,26 @@
 import React from 'react'
 import SectionPage from './SectionPage'
 import Navbar from './Navbar'
+import { useState,useEffect } from 'react'
 const HomePage = () => {
 
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        debugger;
+      fetch('http://127.0.0.1:8000/api/')
+        .then(response =>{
+            
+            
+            debugger;
+            response.json()
+        })
+        .then(data => setData(data));
+    }, []);
 
 
-// movies=[{id:1, name:'movie1', image:'https://picsum.photos/200/300', description:'this is movie1', rating:4.5}]
+
+
 
 
 
