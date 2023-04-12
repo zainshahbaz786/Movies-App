@@ -24,13 +24,33 @@ const handleSignOut = async () => {
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/1200px-Black_colour.jpg",
   };
+
+
   const navigation = [
-    { name: "Latest Movies", href: "", current: true },
-      { name: 'Featured Movies', href: '/#a', current: false },
+    { name: "Latest Movies", href: "/homePage", current: true },
+      { name: 'Featured Movies', href: '/a', current: false },
       { name: 'About Us', href: '/AboutUs', current: false },
     //   { name: 'Calendar', href: '#', current: false },
     //   { name: 'Reports', href: '#', current: false },
   ];
+
+  var url=window.location.href;
+if(url.includes("homePage")){
+navigation[0].current=true;
+navigation[1].current=false;
+navigation[2].current=false;
+}
+if(url.includes("AboutUs")){
+navigation[2].current=true;
+navigation[0].current=false;
+navigation[1].current=false;
+}
+if(url.includes("featured")){
+navigation[1].current=true;
+navigation[0].current=false;
+navigation[2].current=false;
+}
+
 
   const userNavigation = [
     { name: "Your Profile", href: "" },
