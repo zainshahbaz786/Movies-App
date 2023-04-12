@@ -29,7 +29,7 @@ const handleSignOut = async () => {
 
   const navigation = [
     { name: "Latest Movies", href: "/homePage", current: true },
-      { name: 'Featured Movies', href: '/featured', current: false },
+      { name: 'Featured Movies', href: '/library', current: false },
       { name: 'About Us', href: '/AboutUs', current: false },
     //   { name: 'Calendar', href: '#', current: false },
     //   { name: 'Reports', href: '#', current: false },
@@ -88,7 +88,7 @@ const Navbar = () => {
 
 
             <Link className={classNames(
-                              url.includes("homePage")
+                              url.includes("homepage")
                                 ? "bg-gray-900 text-white"
                                 : "text-gray-300 hover:bg-gray-700 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
@@ -97,15 +97,15 @@ const Navbar = () => {
                            
                            to="/homePage">Latest Movies</Link>
             <Link className={classNames(
-                              url.includes("featured")
+                              url.includes("library")
                                 ? "bg-gray-900 text-white"
                                 : "text-gray-300 hover:bg-gray-700 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
                             )}
                             // aria-current={item.current ? "page" : undefined}
-                              to="/featured">Featured Movies</Link>
+                              to="/library">Favourite Movies</Link>
             <Link  className={classNames(
-                              url.includes("aboutUs")
+                              url.includes("aboutus")
                                 ? "bg-gray-900 text-white"
                                 : "text-gray-300 hover:bg-gray-700 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
