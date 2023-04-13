@@ -25,7 +25,7 @@ router = DefaultRouter()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('movies.urls')),
-    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('authenticate/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('', include(router.urls))
 
