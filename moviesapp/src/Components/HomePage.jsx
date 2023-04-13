@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import axios from "axios";
 const HomePage = () => {
-  var [data, setData] = useState([]);
+  var [data, setData] = useState(null);
   debugger;
   useEffect(() => {
     axios.get(`http://127.0.0.1:8000/api/`).then((res) => {
@@ -32,7 +32,10 @@ const HomePage = () => {
            
             
             <>
-              <h6>{item?.name}</h6>
+            
+            {console.log("description is:  "+item.description)}
+            <h6>{item.description}</h6>
+              {/* <h6>{ite}</h6> */}
 
               <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-600 dark:border-gray-700">
                 <a href="#">

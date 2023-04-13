@@ -7,7 +7,9 @@ from rest_framework.response import Response
 
 
 class ListMovies(generics.ListAPIView):
+
     queryset = Movies.objects.all()
+
     serializer_class = MoviesSerializer
 
 
