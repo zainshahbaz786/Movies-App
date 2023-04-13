@@ -5,6 +5,7 @@ import HomePage from   './Components/HomePage'
 import AboutUs from   './Components/AboutUs'
 import FeaturedMovies from './Components/FeaturedMovies'
 import './App.css' 
+import AdminPage from './Components/AdminPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
           <Route path="/homepage" element={<HomePage />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/library" element={<FeaturedMovies />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
 </BrowserRouter>
 
