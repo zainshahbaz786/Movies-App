@@ -3,30 +3,38 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 const Login = () => {
-  const [email, setEmail] = useState("");
+  const [Username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [token, setToken] = useState("");
+
   const handleSubmit = async (e) => {
     debugger;
     e.preventDefault();
-
+console.log("handleSubmit");
+    
     try {
-      const response = await axios.post("AABRA KA DAABRA", {
-        email,
-        password,
+      debugger;
+     
+      const response = await axios.post("http://127.0.0.1:8000/authenticate/", {
+        
+        username:Username,
+        password:password,
       });
+debugger;
+console.log(response.data.token);
 
       // Store the JWT in local storage
       localStorage.setItem("jwt", response.data.token);
 
       // Redirect the user to the dashboard page
-      window.location.href = "/dashboard";
-    } catch (error) {
-      // console.error(error);
       window.location.href = "/homePage";
+    } catch (error) {
+       console.error(error);
+       window.location.href = "/";
     }
   };
   const loginProfile = () => {
-    //debugger;
+    debugger;
     console.log("loginProfile");
   };
 
@@ -46,17 +54,18 @@ const Login = () => {
 
           <form action="" className="mx-auto mt-8 mb-0 max-w-md space-y-4">
             <div>
-              <label htmlFor="email" className="sr-only">
-                Email
+              <label htmlFor="Username" className="sr-only">
+                Username
               </label>
 
               <div className="relative">
                 <input
-                  type="email"
+                  type="text"
+                  id="Username"
                   className="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
-                  placeholder="Enter email"
-                  // value={{email}}
-                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter Username"
+                  // value={{Username}}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
 
                 <span className="absolute inset-y-0 right-0 grid place-content-center px-4">
