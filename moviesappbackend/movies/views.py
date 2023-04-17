@@ -15,6 +15,7 @@ class ListMovies(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
 
 
+
 class CreateMovies(generics.CreateAPIView):
     queryset = Movies.objects.all()
     serializer_class = MoviesSerializer
