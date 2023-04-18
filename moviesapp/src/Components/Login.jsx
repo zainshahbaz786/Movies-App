@@ -8,27 +8,31 @@ const Login = () => {
   const [token, setToken] = useState("");
 
   const handleSubmit = async (e) => {
-    debugger;
+    
     e.preventDefault();
 console.log("handleSubmit");
     
     try {
-      debugger;
      
+     debugger;
       const response = await axios.post("http://127.0.0.1:8000/authenticate/", {
         
         username:Username,
         password:password,
       });
 debugger;
-console.log(response.data.token);
+console.log(response.data.access);
 
       // Store the JWT in local storage
-      localStorage.setItem("jwt", response.data.token);
-
+      localStorage.setItem("jwt", response.data.access);
+      debugger;
       // Redirect the user to the dashboard page
-      window.location.href = "/homePage";
-    } catch (error) {
+      window.location.href = "/explore";
+    }
+    
+    
+    
+    catch (error) {
        console.error(error);
        window.location.href = "/";
     }
@@ -40,10 +44,10 @@ console.log(response.data.token);
 
   return (
     <>
-      <section className="relative flex flex-wrap lg:h-screen lg:items-center">
-        <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+      <section className="relative flex flex-wrap lg:h-screen lg:items-center dark:bg-slate-800">
+        <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24 ">
           <div className="mx-auto max-w-lg text-center">
-            <h1 className="text-2xl font-bold sm:text-3xl text-amber-400">
+            <h1 className="text-2xl font-bold sm:text-3xl  dark:text-white">
               Start watching today with us.
             </h1>
 
@@ -129,7 +133,7 @@ console.log(response.data.token);
             <div className="flex items-center justify-between">
               <button
                 type="submit"
-                className=" rounded-lg bg-orange-300 px-5 py-3 text-sm font-medium text-white flex justify-center hover:bg-orange-400"
+                className=" rounded-lg bg-red-600 px-5 py-3 text-sm font-medium text-white flex justify-center hover:bg-red-700"
                 onClick={handleSubmit}
               >
                 Sign in
@@ -141,7 +145,7 @@ console.log(response.data.token);
         <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
           <img
             alt="Welcome"
-            src="https://images.unsplash.com/photo-1616530940355-351fabd9524b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
+            src="https://images.unsplash.com/photo-1597575732103-9f6d068cfa9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV0ZmxpeHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
             className="absolute inset-0 h-full w-full object-cover"
           />
         </div>

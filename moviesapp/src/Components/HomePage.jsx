@@ -7,7 +7,13 @@ const HomePage = () => {
   var [data, setData] = useState(null);
   debugger;
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/`).then((res) => {
+    const authToken = localStorage.getItem('jwt');
+    axios.get(`http://127.0.0.1:8000/api/`,{
+      headers:{
+        Authorization: `Bearer ${authToken}`
+      }
+      
+    }).then((res) => {
       const result = res.data;
 
       console.log(result);

@@ -28,7 +28,7 @@ const handleSignOut = async () => {
 
 
   const navigation = [
-    { name: "Latest Movies", href: "/homePage", current: true },
+    { name: "Latest Movies", href: "/explore", current: true },
       { name: 'Featured Movies', href: '/library', current: false },
       { name: 'About Us', href: '/AboutUs', current: false },
     //   { name: 'Calendar', href: '#', current: false },
@@ -37,7 +37,7 @@ const handleSignOut = async () => {
 
   var url=window.location.href;
   let current;
-if(url.includes("homePage")){
+if(url.includes("explore")){
 navigation[0].current=true;
 navigation[1].current=false;
 navigation[2].current=false;
@@ -95,7 +95,7 @@ const Navbar = () => {
                             )}
                            
                            
-                           to="/homePage">Latest Movies</Link>
+                           to="/explore">Latest Movies</Link>
             <Link className={classNames(
                               url.includes("library")
                                 ? "bg-gray-900 text-white"
