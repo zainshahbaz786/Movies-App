@@ -6,9 +6,14 @@ const AdminPage = () => {
 <>
 
 <Navbar/>
-<div className="flex p-8 justify-center">
+<div className="flex p-8 justify-center bg-blue-900 h-max">
+
 <div class="w-full max-w-xs">
-  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+<h3 class="text-2xl font-extrabold dark:text-black justify-center text-center">Login to Admin Panel</h3>
+<br/>
+<br/>
+
+  <form class="bg-white shadow-md rounded px-12 pt-6 pb-8 mb-4">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
         Username

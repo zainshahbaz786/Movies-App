@@ -12,13 +12,15 @@ const HomePage = () => {
       headers:{
         Authorization: `Bearer ${authToken}`
       }
-      
+
     }).then((res) => {
       const result = res.data;
 
       console.log(result);
       setData(result);
+      
       debugger;
+      console.log(data);
     });
   }, []);
 
@@ -35,7 +37,8 @@ const HomePage = () => {
           {/* 1st card */}
 
           {data?.map((item, index) => {
-           
+           {debugger}
+
             
             <>
             
