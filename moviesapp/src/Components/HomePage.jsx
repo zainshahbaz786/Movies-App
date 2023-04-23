@@ -94,38 +94,63 @@ const HomePage = () => {
 
 
 
-<div className="flex m-2">
+<div className="flex flex-wrap m-2">
 
-<div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/3">
-  <img class="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
-  <div class="px-6 py-4">
-    <h3 class="text-white font-semibold text-lg mb-2">Stranger Things</h3>
-    <p class="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
-    <p class="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
-    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+<div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/4 m-1 h-1/4">
+  <img className="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div className="px-6 py-4">
+    <h3 className="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p className="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p className="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
       Watch Now
     </button>
   </div>
 </div>
-<div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/3">
-  <img class="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
-  <div class="px-6 py-4">
-    <h3 class="text-white font-semibold text-lg mb-2">Stranger Things</h3>
-    <p class="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
-    <p class="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
-    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+<div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/4 m-1 h-1/4">
+  <img className="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div className="px-6 py-4">
+    <h3 className="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p className="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p className="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
       Watch Now
     </button>
   </div>
 </div>
 
-<div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/3">
-  <img class="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
-  <div class="px-6 py-4">
-    <h3 class="text-white font-semibold text-lg mb-2">Stranger Things</h3>
-    <p class="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
-    <p class="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
-    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+<div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/4 m-1 h-1/4">
+  <img className="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div className="px-6 py-4">
+    <h3 className="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p className="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p className="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+      Watch Now
+    </button>
+  </div>
+</div>
+
+
+<div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/4 m-1 h-1/4">
+  <img className="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div className="px-6 py-4">
+    <h3 className="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p className="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p className="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+      Watch Now
+    </button>
+  </div>
+</div>
+
+<div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/4 m-1 h-1/4">
+  <img className="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div className="px-6 py-4">
+    <h3 className="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p className="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p className="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
       Watch Now
     </button>
   </div>
