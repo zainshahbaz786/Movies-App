@@ -5,9 +5,12 @@ const FeaturedMovies = () => {
   return (
     <>
 <Navbar/>
-    <h1>FeaturedMovies</h1>
-<h3> FeaturedMovies </h3>
-   
+  
+<div className="p-8">
+        <div className="text-2xl font-medium font-raleway ">
+          Favourite Movies List
+        </div> 
+        </div> 
 
 
 

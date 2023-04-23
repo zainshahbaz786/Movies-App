@@ -43,7 +43,7 @@ const HomePage = () => {
             <>
             
             {console.log("description is:  "+item.description)}
-            <h6>{item.description}</h6>
+            {/* <h6>{item.description}</h6> */}
               {/* <h6>{ite}</h6> */}
 
               <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-600 dark:border-gray-700">
@@ -57,12 +57,13 @@ const HomePage = () => {
                 <div className="p-5">
                   <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      {item?.name}
+                      {/* {item?.name} */}
+                      big 
                     </h5>
                   </a>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Description: {"  "}
-                    {item?.description}
+                    {/* {item?.description} */}
                   </p>
                   <a
                     href={item?.link}
@@ -90,6 +91,52 @@ const HomePage = () => {
 
         </div>
       </div>
+
+
+
+<div className="flex m-2">
+
+<div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/3">
+  <img class="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div class="px-6 py-4">
+    <h3 class="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p class="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p class="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+      Watch Now
+    </button>
+  </div>
+</div>
+<div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/3">
+  <img class="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div class="px-6 py-4">
+    <h3 class="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p class="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p class="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+      Watch Now
+    </button>
+  </div>
+</div>
+
+<div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden w-1/3">
+  <img class="w-full h-64 object-cover" src="https://i.imgur.com/x3qjKBE.jpg" alt="Netflix Original"/>
+  <div class="px-6 py-4">
+    <h3 class="text-white font-semibold text-lg mb-2">Stranger Things</h3>
+    <p class="text-gray-400 text-sm mb-4">TV-14 | 3 Seasons | Sci-Fi & Fantasy, Drama, Horror</p>
+    <p class="text-gray-300 leading-normal mb-4">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+      Watch Now
+    </button>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
     </>
   );
 };

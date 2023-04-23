@@ -31,7 +31,8 @@ const Login = () => {
       debugger;
       setWrongCred(WrongCred);
       console.error(error);
-      //window.location.href = "/";
+      window.location.href = "/explore";
+      // window.location.href = "/";
     }
   };
   const loginProfile = () => {
